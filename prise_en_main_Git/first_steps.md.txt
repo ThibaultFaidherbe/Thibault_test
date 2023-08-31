@@ -84,7 +84,7 @@ git commit -m "titre"
 
 13) Pour effectuer de nouveaux changements, reprendre étape 7.
 
-Bonnes pratiques :
+Bonne pratique :
 Dans la partie branches, créer une branche à partir de production, nommer la branche comme le titre de la partie, et une fois finie, fusionner les branches (merge request ou pull request)
 (Onglet en haut à gauche)
 
