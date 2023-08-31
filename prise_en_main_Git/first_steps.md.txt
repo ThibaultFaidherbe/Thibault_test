@@ -1,1 +1,36 @@
-Ceci est un tutoriel gif
+Phase préparatoire :
+
+1)	Télécharger Gitbash (Git pour Windows) : https://gitforwindows.org/
+2)	Créer un compte Git : https://github.com/join
+3)	Télécharger Notepad++ : https://notepad-plus-plus.org/downloads/
+
+
+Prise en main :
+
+4)	Sur la console de Git Bash, configurer Git : 
+git config --global user.name "Ton Nom"
+git config --global user.email ton@email.com
+(note : une ligne à la fois)
+
+5)	Créer un fichier dans le répertoire choisi sur l’ordinateur, exemple : C:\Users\Faidherbe\Thibault_test
+
+6)	Récupérer un dépôt Git existant depuis un emplacement distant (comme GitHub) vers ton ordinateur local, pour cela, taper dans Git Bash (exemple) :
+ git clone https://github.com/ThibaultFaidherbe/Thibault_test.git
+ 
+7)	Editer le document avec Notepad++
+
+8)	Une fois les modifications apportées, enregistrer le document.
+
+9)	Retourner dans la console et indiquer le répertoire dans lequel on se trouve : cd Thibault_test/
+(note : cd pour change directory)
+(note : la commande ls affiche les fichiers et dossiers du répertoire)
+
+10)	Ajouter les modifications et nouveaux fichier du répertoire de travail dans la zone de préparation git : git add .
+(note le « . » sert a ajouter tous les fichier plutôt que d’avoir a les taper un a un, séparés par un espace.
+
+11)	Donner un titre aux modifications qui ont été apportées, ou commit : 
+git commit -m "titre"
+(note le -m donne un argument texte au commit, il peut y avoir d’autres types d’arguments qui seront représentés par une autre lettre)
+
+12)	Synchroniser les changements vers le depot distant tel que GitHub : git push
+
