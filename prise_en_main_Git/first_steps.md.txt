@@ -1,18 +1,65 @@
+Introduction à Git
+
+Git est un système de contrôle de version, largement utilisé dans le développement de logiciels, qui permet de suivre les modifications apportées aux fichiers et aux projets au fil du temps.
+Cela signifie qu'il peut enregistrer chaque modification, permettant aux développeurs de collaborer efficacement, de revenir en arrière en cas d'erreur et de suivre l'évolution d'un projet.
+
+Principales caractéristiques de Git :
+
+ - Système distribué : Chaque contributeur dispose d'une copie complète de l'historique du projet. Cela facilite le travail hors ligne et rend les opérations plus rapides.
+ - Historique des modifications : Git enregistre chaque changement apporté aux fichiers, en conservant une trace complète de l'évolution du projet.
+ - Branches : Git permet de créer des branches, des versions parallèles du code, ce qui facilite le développement de nouvelles fonctionnalités sans perturber la version principale.
+ - Fusion et conflits : Les modifications effectuées dans différentes branches peuvent être fusionnées, mais parfois des conflits surviennent. Git offre des outils pour résoudre ces
+   conflits.
+ - Collaboration : Plusieurs développeurs peuvent travailler sur le même projet en parallèle, en fusionnant leurs modifications de manière ordonnée.
+ - Étiquetage : Des balises peuvent être ajoutées à des points spécifiques de l'historique pour marquer des versions stables ou importantes.
+ - Hébergement : Des plateformes telles que GitHub, GitLab et Bitbucket permettent d'héberger des dépôts Git en ligne, facilitant le partage et la collaboration.
+
+Concepts clés :
+
+ - Dépôt (Repository) : Un répertoire Git qui contient tous les fichiers, l'historique des modifications et les métadonnées du projet.
+ - Commit : Une capture instantanée des modifications apportées à un fichier ou un ensemble de fichiers à un moment donné.
+ - Branche (Branch) : Une version parallèle du projet, permettant d'isoler des développements sans affecter la branche principale.
+ - Fusion (Merge) : La combinaison des modifications apportées dans une branche avec une autre branche, généralement la branche principale.
+ - Conflit : Une situation où Git ne peut pas résoudre automatiquement les différences entre deux branches lors de la fusion.
+ - Clonage (Clone) : La duplication d'un dépôt distant sur un ordinateur local.
+ - Pousser (Push) : L'envoi des commits locaux vers un dépôt distant.
+ - Tirer (Pull) : La récupération des commits depuis un dépôt distant vers l'ordinateur local.
+
 Phase préparatoire :
 
-1)	Télécharger Gitbash (Git pour Windows) : https://gitforwindows.org/
-2)	Créer un compte Git : https://github.com/join
+1)	Créer un compte Git : https://github.com/join
+Créer un compte permettra de stocker et de partager des dépôts de code en ligne.
+
+2)	Télécharger Git Bash (Git pour Windows) : https://gitforwindows.org/
+Git Bash est une interface de ligne de commande similaire à celle de Linux.
+
 3)	Télécharger Notepad++ : https://notepad-plus-plus.org/downloads/
+Notepad++ est un éditeur de texte  utilisé par les développeurs pour éditer divers types de fichiers, y compris les fichiers Markdown (.md).
+
+Fonctionnalités de Notepad++ :
+
+ - Édition de texte avancée : Notepad++ offre des fonctionnalités d'édition de texte avancées telles que la coloration syntaxique, la numérotation des lignes, la recherche et le 
+   remplacement avec des expressions régulières, la mise en évidence de la syntaxe pour de nombreux langages de programmation, y compris Markdown.
+ - Coloration syntaxique pour Markdown : Lorsque tu ouvres un fichier Markdown dans Notepad++, il appliquera automatiquement la coloration syntaxique, ce qui signifie que les différents
+   éléments Markdown (titres, listes, liens, etc.) seront mis en évidence pour améliorer la lisibilité.
+ - Interface personnalisable : Tu peux personnaliser l'interface de Notepad++ en ajustant les thèmes, les couleurs, les icônes, etc., pour qu'elle corresponde à tes préférences visuelles.
+ - Gestion de plusieurs documents : Notepad++ te permet d'ouvrir et d'éditer plusieurs fichiers dans des onglets séparés, ce qui est pratique lorsque tu travailles sur plusieurs fichiers à
+   la fois.
+ - Extensions et plugins : Notepad++ prend en charge les plugins, ce qui signifie que tu peux étendre ses fonctionnalités en ajoutant des plugins spécifiques. Il existe des plugins pour 
+   améliorer le support Markdown, gérer les sessions de travail, etc.
+ - Prise en charge de l'encodage : Notepad++ gère différents encodages de caractères, ce qui est utile lorsque tu travailles avec des fichiers texte dans différentes langues.
 
 
 Prise en main :
 
-4)	Sur la console de Git Bash, configurer Git : 
+4)	Sur la console Git Bash, configurer Git en indiquant le nom d'utilisateur et l'adresse e-mail utilisées sur le compte Git. Ces informations seront utilisées pour enregistrer les 
+    contributions dans les dépôts Git: 
+	
 git config --global user.name "Ton Nom"
 git config --global user.email ton@email.com
-(note : une ligne à la fois)
+(note : taper une ligne à la fois)
 
-5)	Créer un fichier dans le répertoire choisi sur l’ordinateur, exemple : C:\Users\Faidherbe\Thibault_test
+5)	Créer un fichier destinés à être partagé dans le répertoire de travail du projet, exemple : C:\Users\Faidherbe\Thibault_test
 
 6)	Récupérer un dépôt Git existant depuis un emplacement distant (comme GitHub) vers ton ordinateur local, pour cela, taper dans Git Bash (exemple) :
  git clone https://github.com/ThibaultFaidherbe/Thibault_test.git
@@ -34,3 +81,4 @@ git commit -m "titre"
 
 12)	Synchroniser les changements vers le depot distant tel que GitHub : git push
 
+13) Pour effectuer de nouveaux changements, reprendre étape 7.
