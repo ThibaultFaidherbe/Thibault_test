@@ -50,6 +50,7 @@ Fonctionnalités de Notepad++ :
  - Prise en charge de l'encodage : Notepad++ gère différents encodages de caractères, ce qui est utile lorsque tu travailles avec des fichiers texte dans différentes langues.
 
 
+
 Prise en main :
 
 4)	Sur la console Git Bash, configurer Git en indiquant le nom d'utilisateur et l'adresse e-mail utilisées sur le compte Git. Ces informations seront utilisées pour enregistrer les 
@@ -68,7 +69,7 @@ git config --global user.email ton@email.com
 
 8)	Une fois les modifications apportées, enregistrer le document.
 
-9)	Retourner dans la console et indiquer le répertoire dans lequel on se trouve : cd Thibault_test/
+9)	Retourner dans la console et indiquer le répertoire dans lequel on se trouve : cd Thibault_test
 (note : cd pour change directory)
 (note : la commande ls affiche les fichiers et dossiers du répertoire)
 
@@ -82,3 +83,8 @@ git commit -m "titre"
 12)	Synchroniser les changements vers le depot distant tel que GitHub : git push
 
 13) Pour effectuer de nouveaux changements, reprendre étape 7.
+
+Bonnes pratiques :
+Dans la partie branches, créer une branche à partir de production, nommer la branche comme le titre de la partie, et une fois finie, fusionner les branches (merge request ou pull request)
+(Onglet en haut à gauche)
+
